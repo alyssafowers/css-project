@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway&display=swap');
+
 html{
   font-size: 10px;
 }
@@ -10,8 +12,9 @@ header{
   margin-bottom: 0;
 }
 
-main, header, footer{
-  font-size: 1.4rem;
+main,
+header,
+footer{
   color: white;
   max-width: 90rem;
   margin-left: auto;
@@ -19,6 +22,56 @@ main, header, footer{
   margin-top: 0;
   background-color: #070A17;
   padding: .1rem; //this removes the weird gap between header and body, thanks stackoverflow: https://teamtreehouse.com/community/how-do-i-remove-white-space-between-header-section-footer
+}
+
+main,
+header{
+  font-size: 1.4rem;
+}
+
+footer,
+figcaption {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+footer p {
+  line-height: .5;
+}
+
+h1,
+figure,
+section,
+p {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+p,
+li,
+figcaption {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2 {
+font-family: 'Raleway', sans-serif;
+}
+
+h1{
+  margin-bottom: 0;
+}
+
+h1+p{
+    font-style: italic;
+    margin-top: 0.5rem;
+    font-size: 1.8rem;
+}
+
+h2~p {
+font-style: italic;
+size: 1.7rem;
 }
 
 article{
@@ -29,11 +82,43 @@ article{
   column-gap: 10px;
 }
 
-h1, figure, section, p {
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
 img{
   max-width: 100%;
+}
+
+li {
+  margin-bottom: .5rem;
+}
+
+li:hover {
+  color: yellow;
+}
+
+ol li::first-letter{
+  font-size: 1.6rem;
+}
+
+[href]{
+  color: orange;
+}
+
+[href]:hover{
+  color: yellow;
+}
+
+ul{
+  list-style-type: none;
+  color: white;
+}
+
+ul+p{
+  font-size: 2rem;
+}
+
+:checked+span{
+  color: gray;
+}
+
+[type = checkbox]{
+  margin-right: 1rem;
 }

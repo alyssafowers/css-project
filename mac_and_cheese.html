@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+=<!DOCTYPE html>
 <html lang="en">
   <head>
 	  <meta charset="UTF-8" />
 		<title>Macaroni and Cheese</title>
-    <link href="css/style.css" media = "screen" rel="stylesheet" />
-    <link href = "css/print.css" media = "print" rel = "stylesheet"/>
+    <link href="css/style.css" media="screen" rel="stylesheet" />
+    <link href="css/print.css" media="print" rel="stylesheet"/>
 	</head>
 
 	<body>
@@ -15,27 +15,32 @@
 		</header>
 
 		<main>
-      <figure>
-        <img src = "img/mac_and_cheese_photo_crop_wide.jpg" alt = "Photo of macaroni and cheese">
-        <figcaption>Photo by <a href = "https://unsplash.com/@hermez777?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hermes Rivera</a> on <a href = "https://unsplash.com/photos/4qzaeR_sTYA">Unsplash</a></figcaption>
-      </figure>
-      <article>
-       <section>
+      <section>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/mac_and_cheese_photo_crop_wide.jpg">
+          <source media="(min-width: 780px)" srcset="img/mac_and_cheese_photo_crop_wide_med.jpg">
+          <source media="(min-width: 400px)" srcset="img/mac_and_cheese_photo_crop_wide_small.jpg">
+          <img src="img/mac_and_cheese_photo_crop_wide.jpg" alt="Photo of macaroni and cheese">
+        </picture>
+        <p>Photo by <a href="https://unsplash.com/@hermez777?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hermes Rivera</a> on <a href="https://unsplash.com/photos/4qzaeR_sTYA">Unsplash</a></p>
+      </section>
+      <section>
+       <article>
          <h2>Ingredients</h2>
          <p>Yield: 9 quarts, 50 servings</p>
          <ul>
-           <li><input type = "checkbox"><span>3 pounds macaroni</span></li>
-           <li><input type = "checkbox"><span>4 1/2 quarts evaporated milk</span></li>
-           <li><input type = "checkbox"><span>3 pounds American cheese</span></li>
-           <li><input type = "checkbox"><span>1 1/2 teaspoon dry mustard</span></li>
-           <li><input type = "checkbox"><span>1/8 teaspoon cayenne pepper</span></li>
-           <li><input type = "checkbox"><span>1 1/2 quart bread crumbs</span></li>
-           <li><input type = "checkbox"><span>1 1/2 cup butter</span></li>
-           <li><input type = "checkbox"><span>Pinch paprika</span></li>
+           <li><input type="checkbox"><span>3 pounds macaroni</span></li>
+           <li><input type="checkbox"><span>4 1/2 quarts evaporated milk</span></li>
+           <li><input type="checkbox"><span>3 pounds American cheese</span></li>
+           <li><input type="checkbox"><span>1 1/2 teaspoon dry mustard</span></li>
+           <li><input type="checkbox"><span>1/8 teaspoon cayenne pepper</span></li>
+           <li><input type="checkbox"><span>1 1/2 quart bread crumbs</span></li>
+           <li><input type="checkbox"><span>1 1/2 cup butter</span></li>
+           <li><input type="checkbox"><span>Pinch paprika</span></li>
          </ul>
-       </section>
-       <section>
-         <h2>Direc tions</h2>
+       </article>
+       <article>
+         <h2>Directions</h2>
          <p>Preheat oven to 350° F.</p>
          <ol>
            <li>Boil macaroni until just tender in a large amount of boiling water to which 3 tablespoons salt have been added</li>
@@ -47,14 +52,14 @@
             <li>Sprinkle with paprika</li>
             <li>Bake until crumbs are brown, about 25 minutes</li>
           </ol>
-        </section>
-      </article>
+        </article>
+      </section>
 		</main>
 
 		<footer>
 		  <p>Source: Quality Recipes for Quality Food</p>
       <p>Author: Evaporated Milk Association</p>
-      <p>Found on <a href = "https://publicdomainrecipes.org/recipes/macaroni-and-cheese/">Public Domain Recipes</a>.</p>
+      <p>Found on <a href="https://publicdomainrecipes.org/recipes/macaroni-and-cheese/">Public Domain Recipes</a>.</p>
 		</footer>
   </div>
 	</body>

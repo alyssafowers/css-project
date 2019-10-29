@@ -15,6 +15,7 @@ header{
 div{
   color: white;
   width: 75%;
+  min-width: 30rem;
   max-width: 90rem;
   margin-left: auto;
   margin-right: auto;
@@ -26,38 +27,31 @@ header{
   font-size: 1.4rem;
 }
 
-footer,
-figcaption {
+footer {
   font-size: 1rem;
   font-style: italic;
-}
-
-footer{
-  padding-bottom: 1rem;
 }
 
 footer p {
   line-height: .5;
 }
 
-h1,
-figure,
-section,
-p {
-  margin-left: 2rem;
-  margin-right: 2rem;
+section, header, footer {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+
 }
 
 p,
-li,
-figcaption {
+li {
   font-family: 'Lato', sans-serif;
   line-height: 1.5;
 }
 
 h1,
 h2 {
-font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 h1{
@@ -71,20 +65,30 @@ h1+p{
 }
 
 h2~p {
-font-style: italic;
-size: 1.7rem;
+    font-style: italic;
+    size: 1.7rem;
 }
 
-article{
+section:first-child{
+  font-style: italic;
+}
+
+section:nth-child(2){
   max-width: 85rem;
+  min-width: 25rem;
   margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); /* used this to figure out how to do auto-fitting columns: https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/)*/
   column-gap: 10px;
 }
 
-img{
-  max-width: 100%;
+article{
+  min-width: 20rem;
+}
+
+
+img, source{
+  width: 100%;
 }
 
 li {
@@ -92,7 +96,7 @@ li {
 }
 
 li:hover {
-  color: yellow;
+  color: #f9ad3d;
 }
 
 ol li::first-letter{
@@ -100,16 +104,17 @@ ol li::first-letter{
 }
 
 [href]{
-  color: orange;
+  color: #f9ad3d;
 }
 
 [href]:hover{
-  color: yellow;
+  color: #c66e25;
 }
 
 ul{
   list-style-type: none;
   color: white;
+  margin-left: 0;
 }
 
 ul+p{

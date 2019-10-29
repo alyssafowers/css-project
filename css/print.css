@@ -17,7 +17,7 @@ article{
   column-gap: 10px;
 }
 
-img, [type = "checkbox"], figcaption{
+img, [type="checkbox"], figcaption{
   display: none;
 }
 

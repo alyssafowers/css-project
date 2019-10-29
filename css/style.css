@@ -12,9 +12,7 @@ header{
   margin-bottom: 0;
 }
 
-main,
-header,
-footer{
+div{
   color: white;
   width: 75%;
   max-width: 90rem;
@@ -22,7 +20,6 @@ footer{
   margin-right: auto;
   margin-top: 0;
   background-color: #070A17;
-  padding: .1rem; //this removes the weird gap between header and body, thanks stackoverflow: https://teamtreehouse.com/community/how-do-i-remove-white-space-between-header-section-footer
 }
 
 main,

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway&display=swap');
+
+html{
+  font-size: 10px;
+}
+
+body{
+  margin-left: .5in;
+  margin-right: .5in;
+  width: 7.5in;
+  font-family: 'Lato', sans-serif;
+}
+
+article{
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  column-gap: 10px;
+}
+
+img, [type = "checkbox"], figcaption{
+  display: none;
+}
+
+a[href]::after{
+  content: " ("attr(href)")";
+}
+
+h1{
+  font-size: 2.5rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+h2{
+  font-size: 2rem;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+p, li{
+  font-size: 1.2rem;
+}
+
+li{
+  margin: .5rem;
+}
+
+footer p{
+  margin: .4rem;
+}

@@ -9,7 +9,7 @@ body{
 }
 
 header{
-  margin-bottom: 0;
+  padding-top: 1rem;
 }
 
 div{
@@ -18,7 +18,6 @@ div{
   max-width: 90rem;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0;
   background-color: #070A17;
 }
 
@@ -31,6 +30,10 @@ footer,
 figcaption {
   font-size: 1rem;
   font-style: italic;
+}
+
+footer{
+  padding-bottom: 1rem;
 }
 
 footer p {
@@ -117,6 +120,6 @@ ul+p{
   color: gray;
 }
 
-[type = checkbox]{
+[type=checkbox]{
   margin-right: 1rem;
 }
